@@ -12,5 +12,8 @@
     <h3><%= skill.skill %></h3>
     <h3>Has a firm grasp and has practiced with: </h3>
     <h3><%= skill.done ? 'Yes' : 'No, not yet' %></h3>
+    <form action="/skills/<%= element.id %>?_method=PUT" class="update-form" method="POST"> // LOOK HERE
+        <button type="submit">Edit</button>
+    </form>
 </body>
 </html>

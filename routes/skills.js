@@ -1,7 +1,7 @@
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
 // Require export controller to do CRUD functions // (create, retrieve, update & delete)
-let skillsCtrl = require('../controllers/skills');
+const skillsCtrl = require('../controllers/skills');
 
 // All actual paths start with "/skills"
 
@@ -15,5 +15,7 @@ router.get('/:id', skillsCtrl.show);
 router.post('/', skillsCtrl.create);
 
 router.delete('/:id', skillsCtrl.delete);
+
+router.update('/:skill', skillsCtrl.show);
 
 module.exports = router;

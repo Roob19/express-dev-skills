@@ -1,14 +1,13 @@
-let createError = require('http-errors');
-let express = require('express');
-let path = require('path');
-let cookieParser = require('cookie-parser');
-let logger = require('morgan');
-let methodOverride = require('method-override');
+const createError = require('http-errors');
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const methodOverride = require('method-override');
 
-let indexRouter = require('./routes/index');
-let skillsRouter = require('./routes/skills');
+const indexRouter = require('./routes/index');
+const skillsRouter = require('./routes/skills');
 
-let app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -15,7 +15,8 @@ module.exports = {
     getAll,
     getOne,
     create,
-    deleteOne
+    deleteOne,
+    updateOne
 };
 
 function getAll() {
@@ -33,4 +34,9 @@ function create(skill) {
 function deleteOne (id) {
     const idx = skills.findIndex(skill => skill.id === parseInt(id));
     skills.splice(idx, 1);
+}
+function updateOne (skill) {
+    skill.id = Date.now() % 100000;
+    skill.done = false;
+    skills.push(skill);
 }
