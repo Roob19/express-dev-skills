@@ -18,7 +18,7 @@
     <h3><%= skill.done ? 'Yes' : 'No, not yet' %></h3>
     <form
       action="/skills/<%= skill.done %>?_method=PUT"
-      class="delete-form"
+      class="update-form"
       method="POST"
     >
       <button type="submit">Edit</button>
