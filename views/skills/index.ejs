@@ -8,16 +8,14 @@
     <title>Mad Skills</title>
 </head>
 <body align='center' text-align='center'>
-    <h1>MAD Skills</h1>
+    <h1>MAD Skills as of <%= time %></h1>
     <ul style="list-style-type: none;">
         <% skills.forEach(function(element) { %>
             <li>
                 <a href="/skills/<%= element.id %>"><%= element.skill %></a>
-                <%= element.skill %>
-                    - 
-                <%= element.done ? 'done' : 'not done, yet' %>
             </li>
         <% }); %>
     </ul>
+    <a href="/skills/new">Add a skill</a>
 </body>
 </html>
