@@ -36,7 +36,10 @@ function deleteOne (id) {
     skills.splice(idx, 1);
 }
 function updateOne (skill) {
-    skill.id = Date.now() % 100000;
-    skill.done = false;
+    console.log('This is updateOne element: ', skill);
+    getOne;
+    console.log('this is updateOne getOne: ', getOne);
+    skills.done = false;
     skills.push(skill);
+    console.log('this is updateOne skill: ', skills.push(skill));
 }
