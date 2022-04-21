@@ -41,5 +41,5 @@ function updateOne (skill) {
     console.log('this is updateOne getOne: ', getOne);
     skills.done = false;
     skills.push(skill);
-    console.log('this is updateOne skill: ', skills.push(skill));
+    console.log('this is updateOne push skill: ', skills.push(skill));
 }
